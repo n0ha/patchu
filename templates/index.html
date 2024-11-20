@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patchu - Blueprint Resizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .custom-bg {
+            background-color: #d9d8c6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="p-8 rounded shadow-md w-full max-w-lg text-center custom-bg">
+        <!-- Logo and Name -->
+        <div class="mb-6 flex items-center justify-center space-x-4">
+            <img src="/static/logo.webp" alt="Patchu Logo" class="w-24 h-24">
+            <div>
+                <h1 class="text-3xl font-bold text-yellow-500">Patchu</h1>
+                <p class="text-sm text-gray-600">Your friendly blueprint resizer!</p>
+            </div>
+        </div>
+
+        <!-- Form with Border -->
+        <div class="border border-gray-200 rounded-lg p-6 bg-[#e6e5d9]">
+            <form action="/" method="POST" enctype="multipart/form-data" class="space-y-6">
+                <div class="flex items-center mb-4">
+                    <label for="image" class="w-1/3 text-sm font-medium text-gray-700">Upload Blueprint</label>
+                    <input type="file" name="image" id="image" required class="w-2/3 px-4 py-3 border border-yellow-600 rounded-md bg-[#e6e5d9] focus:ring-yellow-500 focus:border-yellow-600">
+                </div>
+                <div class="flex items-center mb-4">
+                    <label for="target_height" class="w-1/3 text-sm font-medium text-gray-700">Target Height (cm)</label>
+                    <input type="number" name="target_height" id="target_height" required min="1" step="1" class="w-2/3 px-4 py-3 border border-yellow-600 rounded-md bg-[#e6e5d9] focus:ring-yellow-500 focus:border-yellow-600">
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-white py-3 px-4 rounded-md shadow-md font-bold hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50">Generate PDF</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
