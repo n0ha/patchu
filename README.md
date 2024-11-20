@@ -1,4 +1,4 @@
-![Patchu Logo](static/logo.png)
+![Patchu Logo](static/logo.webp | width=200)
 
 # Patchu - Blueprint Resizer
 
