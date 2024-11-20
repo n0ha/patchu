@@ -1,6 +1,10 @@
-![Patchu Logo](static/logo.webp | width=200)
 
-# Patchu - Blueprint Resizer
+<div align="center">
+  <img src="https://github.com/n0ha/patchu/blob/main/static/logo.webp?raw=true" alt="Patchu Logo" width="100">
+  <h1 style="display: inline-block; vertical-align: middle;">Patchu</h1>
+</div>
+
+# Blueprint Resizer
 
 **Patchu** is a simple web-based tool designed to help users resize sewing blueprints. It allows users to upload a blueprint image, specify the target height, and generate a printable PDF that can be printed on A4 paper, ready to be stitched together.
 
@@ -79,5 +83,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
